@@ -70,10 +70,6 @@
     <script>
         document.getElementById("experience-form").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent the default form submission behavior
-            
-            // Handle the form submission using JavaScript or AJAX
-            // For example, you can send the form data asynchronously using fetch or XMLHttpRequest
-            // Here's an example using fetch:
             fetch("https://langchain-project-main.vercel.app/experience", {
                 method: "POST",
                 body: new FormData(event.target)
